@@ -1,0 +1,28 @@
+## Review Session
+#ES6
+1. Arrow Function
+2. let & const
+3. Functional loops
+4. Template Literal
+5. Ternary Operators
+6. Rest & Spread
+7. Object Destructuring
+8. Class Constructors
+
+#Node
+1. Process.argv
+2. Modules (module.exports and require)
+3. Create a package.json
+4. Install third-party libraries
+5. Read and writeFile
+
+
+# Express
+1. Basic server boiler plate
+2. Body Parsing
+2. Routes (API/HTML, GET POST PUT DELETE)
+3. Query Params
+4. Making front end GET/POST/PUT/DELETE requests to the backend (browser or insomnia)
+5. Serving Static Assets
+6. Modular Routing
+7. Custom Middleware
