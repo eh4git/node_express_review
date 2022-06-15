@@ -1,9 +1,11 @@
 //? Process.argv
+let codeToRun = () => {};
 // console.log(process.argv);
 // const [nodeProcessPath, pathToFile, ...args] = process.argv;
 // console.log(args);
 
 //? Modules
+codeToRun = () => {};
 // const myModule = require("./module");
 // console.log(myModule("math"));
 
@@ -21,6 +23,7 @@
 //* npm install --save-dev {nameOfModule} || npm i --save-dev {nameOfModule} // devDependencies
 
 //* npm i everyday-fun
+codeToRun = () => {};
 // const fun = require("everyday-fun");
 // console.log(fun);
 // console.log(fun.getRandomJoke());
@@ -28,30 +31,35 @@
 // console.log(fun.getRandomRiddle());
 
 //? Read and Write Files
-const fs = require("fs");
 //* fs.readFile(path, [options], callback)
 //* fs.readFileSync(path, [options])
 //* fs.writeFile(path, data, [options], callback)
 //* fs.writeFileSync(path, data, [options])
 
-// const toCover = fs.readFile("../toCover.txt", "utf8", (err, data) => {
-//   if (err) {
-//     console.log(err);
-//   } else {
-//     console.log(data);
-//   }
-// });
-// console.log(toCover);
+codeToRun = () => {
+  const fs = require("fs");
 
-// const toCover = fs.readFileSync("../toCover.txt", "utf8");
-// console.log(toCover);
+  // const toCover = fs.readFile("../toCover.txt", "utf8", (err, data) => {
+  //   if (err) {
+  //     console.log(err);
+  //   } else {
+  //     console.log(data);
+  //   }
+  // });
+  // console.log(toCover);
 
-// fs.writeFile("./toCoverCopy.txt", toCover, err => {
-//   if (err) {
-//     console.log(err);
-//   } else {
-//     console.log("File written successfully");
-//   }
-// });
+  // const toCover = fs.readFileSync("../toCover.txt", "utf8");
+  // console.log(toCover);
 
-// fs.writeFileSync("./toCoverCopy.txt", toCover);
+  // fs.writeFile("./toCoverCopy.txt", toCover, err => {
+  //   if (err) {
+  //     console.log(err);
+  //   } else {
+  //     console.log("File written successfully");
+  //   }
+  // });
+
+  // fs.writeFileSync("./toCoverCopy.txt", toCover);
+};
+
+codeToRun();
