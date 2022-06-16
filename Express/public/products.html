@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Products</title>
 </head>
 <body>
     <h1>Hello Products!</h1>
     <div id="products"></div>
     <script>
-       fetch("api/products")
+       fetch("/api/products")
         .then(response => response.json())
         .then(data => {
             console.log(data);
@@ -18,9 +18,11 @@
             let output = "";
             data.productList.forEach(product => {
             output += `
-                        <div>
-                            <h4>${product.name}</h4>
-                            <p>${product.productPrice}</p>
+                        <div style="border:solid black;margin:20px;padding:10px;width:250px">
+                            <h4>${product.productName}</h4>
+                            <img src="${product.productImage}" alt="${product.productName}" style="width:200px">
+                            <p>$${product.productPrice}</p>
+                            <p>${product.productDescription}</p>
                         </div>
                     `;
             });

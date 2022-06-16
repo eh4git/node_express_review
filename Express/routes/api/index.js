@@ -3,7 +3,6 @@ const fs = require("fs");
 const path = require("path");
 
 router.get("/products", (req, res) => {
-  console.log(process.cwd());
   const products = JSON.parse(
     fs.readFileSync(path.join(process.cwd(), "/db/db.json"), "utf8")
   );
