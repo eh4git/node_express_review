@@ -1,0 +1,28 @@
+{
+    "products": {
+        "productList": [
+            {
+                "productId": "1",
+                "productName": "Product 1",
+                "productDescription": "Product 1 Description",
+                "productPrice": "100",
+                "productImage": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+            },
+            {
+                "productId": "2",
+                "productName": "Product 2",
+                "productDescription": "Product 2 Description",
+                "productPrice": "200",
+                "productImage": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+            },
+            {
+                "productId": "3",
+                "productName": "Product 3",
+                "productDescription": "Product 3 Description",
+                "productPrice": "300",
+                "productImage": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+            }
+        ]
+        
+    }
+}

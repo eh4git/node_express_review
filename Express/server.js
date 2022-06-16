@@ -1,7 +1,7 @@
 const express = require("express");
-
-const api = require("./routes/api/api");
-const html = require("./routes/html/html.js");
+const path = require("path");
+const api = require("./routes/api/index.js");
+const html = require("./routes/html/index.js");
 
 const PORT = process.env.PORT || 3001;
 
@@ -14,7 +14,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api", api);
 app.use("/", html);
 
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "public")));
+
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT} 🚀`)
 );
